@@ -1,7 +1,0 @@
----
-- name: Run shell script
-  hosts: localhost
-  gather_facts: true 
-  tasks:
-    - name: Run shell script
-      script: shell_scripts/helloworld.sh
