@@ -1,6 +1,7 @@
 ---
-# This playbook deploys the whole application stack in this site.  
-
-# Apply common configuration to all hosts
-- hosts: localhost
-- script: /root/scripts/test.sh
+- name: Run shell script
+  hosts: localhost
+  gather_facts: true 
+  tasks:
+    - name: Run shell script
+      script: shell_scripts/helloworld.sh
